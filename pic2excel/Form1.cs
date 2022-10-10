@@ -65,8 +65,8 @@ namespace pic2excel
 
             using (ExcelPackage excel = new ExcelPackage(excelFile))
             {
-                var worksheet = excel.Workbook.Worksheets[1]; 
-                    //excel.Workbook.Worksheets.Add("Worksheet1");
+                  excel.Workbook.Worksheets.Add("Worksheet1");
+                var worksheet = excel.Workbook.Worksheets["Worksheet1"];
                 //excel.Workbook.Worksheets.Add("Worksheet2");
                 //excel.Workbook.Worksheets.Add("Worksheet3");
 
